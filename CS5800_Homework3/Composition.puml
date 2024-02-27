@@ -1,0 +1,34 @@
+@startuml
+
+' Definition of the File class
+class File {
+    -name : String
+
+    +File(name : String)
+    +setName(name : String) : void
+    +getName() : String
+    +toString() : String
+}
+
+' Definition of the Folder class, which owns File objects and other Folder objects
+class Folder {
+    -name : String
+    -subfolders : ArrayList<Folder>
+    -files : ArrayList<File>
+
+    +Folder()
+    +setName(name : String) : void
+    +getName() : String
+    +addSubfolder(subFolderName : String) : void
+    +removeSubfolder(subFolderName : String) : void
+    +getSubfolder(subFolderName : String) : Folder
+    +addFile(fileName : String) : void
+    +removeFile(file : File) : boolean
+    +toString() : String
+    +printFolderContents() : void
+}
+
+Folder "1" *-- "many" Folder : contains >
+Folder "1" *-- "many" File : contains >
+
+@enduml

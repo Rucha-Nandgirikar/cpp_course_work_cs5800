@@ -1,0 +1,52 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Course
+class Instructor
+class Textbook
+
+Course "1" o-- "many" Instructor : has >
+Course "1" o-- "many" Textbook : has >
+
+class Course
+{
+-courseName : String
+-instructor: Instructor[*]
+-textbooks: Textbook[*]
+
+
++getCourseName(): String
++setCourseName(name : String): void
++getInstructor(): Instructor
++setInstructor(Instructor instructor): void
++getTextbook(): Textbook
++setTextbook(Textbook textbook): void
++print(): void
+}
+class Textbook
+{
+ -bookTitle: String
+ -bookAuthor: String
+ -publisher: String
+
+ +getTitle() : String
+ +setTitle(String title) : void
+ +getAuthor() : String
+ +setAuthor(String author) : void
+ +getPublisher() : String
+ +setPublisher(String publisher) : void
+}
+class Instructor
+{
+-firstName: String
+-lastName : String
+-officeNumber : String
+
++getFirstName() : void
++setFirstName(firstName : String): void
++getLastName() : void
++setLastName(lastName : String) : void
++getOfficeNumber() :
++setOfficeNumber() : void
+}
+@enduml

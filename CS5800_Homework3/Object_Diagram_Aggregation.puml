@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+object "c2:Course" as c2 {
+
+}
+
+object "c1: Course" as course{
+courseName : "CS5800-Advanced Software Engineering"
+textbook : textbook
+instructor : instructor
+}
+
+object "textbook: Textbook" as textbook {
+bookTitle : "Clean Code"
+bookAuthor: "Robert C Martin",
+publisher:  "Prentice Hall"
+}
+
+object "instructor : Instructor" as instructor {
+firstName : "Nima"
+lastName : "Davarpanah"
+officeNumber : "3-2636"
+}
+
+instructor o-- course   : has a
+textbook o-- course : has a
+
+
+@enduml
