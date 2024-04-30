@@ -1,0 +1,23 @@
+H, Arial, Red, 12
+e, Calibri, Blue, 14
+l, Verdana, Black, 16
+l, Arial, Red, 12
+o, Calibri, Blue, 14
+W, Verdana, Black, 16
+o, Arial, Red, 12
+r, Calibri, Blue, 14
+l, Verdana, Black, 16
+d, Arial, Red, 12
+C, Calibri, Blue, 14
+S, Verdana, Black, 16
+5, Arial, Red, 12
+8, Calibri, Blue, 14
+0, Verdana, Black, 16
+0, Arial, Red, 12
+T, Times New Roman, Purple, 18
+e, Courier New, Green, 20
+s, Georgia, Orange, 22
+t, Comic Sans MS, Pink, 24
+i, Arial Narrow, Cyan, 26
+n, Impact, Magenta, 28
+g, Tahoma, Lime, 30
